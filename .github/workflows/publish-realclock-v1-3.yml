@@ -1,0 +1,44 @@
+name: Publish RealClock v1.3 D3D9 source
+
+on:
+  push:
+    paths:
+      - '.github/workflows/publish-realclock-v1-3.yml'
+      - 'tools/publish_realclock_v1_3.py'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify ZIP and extract exact source files
+        run: python tools/publish_realclock_v1_3.py
+      - name: Ensure source Python is syntactically valid
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import ast
+          d=Path('1FHD_RealClock_v1.3_D3D9_TEST_Nexus-GitHub/SOURCE')
+          files=list(d.rglob('*.py'))
+          for p in files:
+            ast.parse(p.read_text(encoding='utf-8-sig'),filename=str(p))
+          print('PASS syntax:',len(files))
+          PY
+      - name: Commit extracted sources and checksum report
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- 1FHD_RealClock_v1.3_D3D9_TEST_Nexus-GitHub/SOURCE 1FHD_RealClock_v1.3_D3D9_TEST_Nexus-GitHub/docs 1FHD_RealClock_v1.3_D3D9_TEST_Nexus-GitHub/VERIFICATION.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Publish byte-identical RealClock v1.3 D3D9 source'
+            git push origin HEAD:main
+          fi

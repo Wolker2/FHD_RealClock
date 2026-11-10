@@ -1,19 +1,24 @@
-# FHD_RealClock — Space Rangers HD
+# FHD_RealClock — Космические рейнджеры HD
 
-Мод отображения реального времени в верхней части экрана в «Космических рейнджерах HD».
+Мод часов реального времени в игре.
 
-## Версия 0.1.1 TEST
+## Новая версия: v1.3 D3D9 TEST
 
-- [Готовый ZIP для установки](1FHD_RealClock_0.1.1_TEST_Nexus-GitHub/install/FHD_RealClock_0.1.1_TEST.zip)
-- [Исходники для Nexus / GitHub](1FHD_RealClock_0.1.1_TEST_Nexus-GitHub/SOURCE)
-- [Описание версии](1FHD_RealClock_0.1.1_TEST_Nexus-GitHub/README.md)
-- [Оригинальная инструкция по установке](1FHD_RealClock_0.1.1_TEST_Nexus-GitHub/docs/README_RU.txt)
-- [Проверка целостности](1FHD_RealClock_0.1.1_TEST_Nexus-GitHub/VERIFICATION.json)
+- [Скачать оригинальный ZIP](1FHD_RealClock_v1.3_D3D9_TEST_Nexus-GitHub/install/FHD_RealClock_v1.3_D3D9_TEST.zip)
+- [Исходники для Nexus / GitHub](1FHD_RealClock_v1.3_D3D9_TEST_Nexus-GitHub/SOURCE)
+- [Описание версии и изменений](1FHD_RealClock_v1.3_D3D9_TEST_Nexus-GitHub/README.md)
+- [Оригинальная инструкция по установке](1FHD_RealClock_v1.3_D3D9_TEST_Nexus-GitHub/docs/README_RU.txt)
+- [Проверка исходников и контрольных сумм](1FHD_RealClock_v1.3_D3D9_TEST_Nexus-GitHub/VERIFICATION.json)
 
-Часы показывают местное время Windows в формате **HH:MM**, без секунд, с отступом 3 пикселя от верха по центру игрового кадра.
+В версии 1.3 добавлены отрисовка D3D9, меню настройки, отдельное скрытие даты/рамки, прозрачность и цвета, сохранение параметров в INI.
 
-Контрольная сумма установочного ZIP: `e9aa825bb4d7a8e09607dc511912453920ce314e6159cfd0901984ca2d08a22c`.
+**SHA-256 ZIP:** `11ba1462e902d221a8f6241edbbe3be507852ed61a92345af021a9f9c8ab7859`.
 
-Состояние — **TEST**. Исходники содержат C-код DLL, но установка/работа в игре в рамках этой публикации не проверены. Мод использует сигнатуры двух конкретных версий EXE.
+Статус — **TEST**. Проверена целостность архива и исходников; игру при публикации не запускали.
 
-[Исходный установочный ZIP в корне репозитория](FHD_RealClock_0.1.1_TEST.zip) сохранён без изменений.
+## Предыдущая версия: 0.1.1 TEST
+
+- [Установочный ZIP 0.1.1](1FHD_RealClock_0.1.1_TEST_Nexus-GitHub/install/FHD_RealClock_0.1.1_TEST.zip)
+- [Исходники 0.1.1](1FHD_RealClock_0.1.1_TEST_Nexus-GitHub/SOURCE)
+
+Предыдущие версии не заменяются.
