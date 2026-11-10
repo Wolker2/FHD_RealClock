@@ -1,0 +1,22 @@
+Data ^{
+    ScriptLibs ^{
+        FHDRealClock ~{
+            Path=Mods\FHD_MODS\FHD_RealClock\Native\FHDRealClock.dll
+            FHD_ClockInit=int,FHD_ClockInit
+        }
+    }
+}
+BV ^{
+    OnStart ^{
+        FHDRealClockStart ~{
+            00=unknown fhdClock=ImportedFunction('FHDRealClock','FHD_ClockInit');
+            01=fhdClock();
+        }
+    }
+    OnLoad ^{
+        FHDRealClockLoad ~{
+            00=unknown fhdClock=ImportedFunction('FHDRealClock','FHD_ClockInit');
+            01=fhdClock();
+        }
+    }
+}

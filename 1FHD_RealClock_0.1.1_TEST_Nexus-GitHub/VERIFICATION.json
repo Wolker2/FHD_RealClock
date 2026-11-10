@@ -1,0 +1,31 @@
+{
+  "original_zip": "FHD_RealClock_0.1.1_TEST.zip",
+  "original_zip_sha256": "e9aa825bb4d7a8e09607dc511912453920ce314e6159cfd0901984ca2d08a22c",
+  "archive_file_count": 18,
+  "source_file_count": 13,
+  "runtime_file_count": 4,
+  "source_files_byte_exact": true,
+  "original_file_sha256": {
+    "Mods/FHD_MODS/FHD_RealClock/CFG/Main.dat": "e2f8fb1e83eb7680bf28d8cecde69a62fe4099636ed5811a3fad82e8eb66ce44",
+    "Mods/FHD_MODS/FHD_RealClock/ModuleInfo.txt": "65e85c44397f461967bc57dc1c11dc5af7eed3d2255c456349d9458a5a263dcb",
+    "Mods/FHD_MODS/FHD_RealClock/Native/FHDRealClock.dll": "916f110b6d18a7142fbbbeb47bae81d6cd6422dbe6f9e238aca66988142d51a9",
+    "README_RU.txt": "6b63509cd0a89af5189a1e9a30e96c934acd9670f0934f12f3d8210d3b03d77c",
+    "FHD_RealClock_SOURCE/BUILD.md": "7a6208afcd0f18238f21aa812bbacb18843871367360bacdb5eec1981d78e2c1",
+    "FHD_RealClock_SOURCE/CHANGELOG.md": "bd4eef053777075608c27f7bffb0647f3634d86cf364335a53624157d3a15db3",
+    "FHD_RealClock_SOURCE/Main.txt": "89333bc6d113ac4fd2cd8b6b9f19c1e399796b485537c5fca494d1f8165f3dd4",
+    "FHD_RealClock_SOURCE/build.sh": "33905d1b8c0323870daf46822ea7ce8839195a745b8b1d924e221abe2b98128f",
+    "FHD_RealClock_SOURCE/build_dat.py": "6503c70c52cf9d137049ce8fcda7c6cedd6c184a20485528b97c2f323959eff3",
+    "FHD_RealClock_SOURCE/clock_geometry.c": "9a6f544b01149b8c07175d2d88140d6588aef9cfd7b76d5c6dc00accf652eb95",
+    "FHD_RealClock_SOURCE/clock_geometry.h": "fdab6183b883962febe3a72a779173a5626c9dcc024566b1a6239d14f77814f2",
+    "FHD_RealClock_SOURCE/fhd_clock.c": "7c0aac6a3f9f4bf47e0958ed1913aa991a3c80f202f260ba4042d8bea46c3a9b",
+    "FHD_RealClock_SOURCE/fhd_clock.def": "c456a429b1f9d4529f65ad185334934d65f193792514268e59250ecfa02c3d68",
+    "FHD_RealClock_SOURCE/requirements.md": "80ff4b70238920202c4d38a6493214e33524316741a1edef77b6ad8daf292a87",
+    "FHD_RealClock_SOURCE/tests/verify_dat.py": "dd59bbe09d321a10ecd6ad35edbe6c231ae61279b7022d5077027c9556308725",
+    "FHD_RealClock_SOURCE/tests/verify_pe.py": "4276bb27f3e54f670fcf9bef5085c928528540c1b27b0546f49eb316e3486fa3",
+    "SHA256SUMS.txt": "18807b6516aeae5419ab706b3c8aa2202626506e2a2bea90dc1be682dda53007",
+    "FHD_RealClock_SOURCE/manifest.json": "9f42694e9542f8bf4e3144cc0b4eb9fd0338f289e98b79832ae584a14ce9a634"
+  },
+  "source_build_executed": false,
+  "runtime_tested_in_game": false,
+  "exe_compatibility_confirmed_by_this_publish": false
+}

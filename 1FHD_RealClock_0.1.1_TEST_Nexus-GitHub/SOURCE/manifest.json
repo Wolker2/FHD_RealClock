@@ -1,0 +1,35 @@
+{
+  "mod": "FHD_RealClock",
+  "version": "0.1.1 TEST",
+  "game_exe": {
+    "2025-10-13": "83300344af802bc51e64389c58f047e5afdf195c133048098be3881fae29ed98",
+    "2026-10-06": "e43a4b15503c705eebe2d8ce5778c2a2fb090db515a3fd86d319e5c5aa692ebf"
+  },
+  "files": {
+    "Mods/FHD_MODS/FHD_RealClock/CFG/Main.dat": "e2f8fb1e83eb7680bf28d8cecde69a62fe4099636ed5811a3fad82e8eb66ce44",
+    "Mods/FHD_MODS/FHD_RealClock/ModuleInfo.txt": "65e85c44397f461967bc57dc1c11dc5af7eed3d2255c456349d9458a5a263dcb",
+    "Mods/FHD_MODS/FHD_RealClock/Native/FHDRealClock.dll": "916f110b6d18a7142fbbbeb47bae81d6cd6422dbe6f9e238aca66988142d51a9",
+    "README_RU.txt": "6b63509cd0a89af5189a1e9a30e96c934acd9670f0934f12f3d8210d3b03d77c"
+  },
+  "sources": {
+    "BUILD.md": "7a6208afcd0f18238f21aa812bbacb18843871367360bacdb5eec1981d78e2c1",
+    "CHANGELOG.md": "bd4eef053777075608c27f7bffb0647f3634d86cf364335a53624157d3a15db3",
+    "Main.txt": "89333bc6d113ac4fd2cd8b6b9f19c1e399796b485537c5fca494d1f8165f3dd4",
+    "build.sh": "33905d1b8c0323870daf46822ea7ce8839195a745b8b1d924e221abe2b98128f",
+    "build_dat.py": "6503c70c52cf9d137049ce8fcda7c6cedd6c184a20485528b97c2f323959eff3",
+    "clock_geometry.c": "9a6f544b01149b8c07175d2d88140d6588aef9cfd7b76d5c6dc00accf652eb95",
+    "clock_geometry.h": "fdab6183b883962febe3a72a779173a5626c9dcc024566b1a6239d14f77814f2",
+    "fhd_clock.c": "7c0aac6a3f9f4bf47e0958ed1913aa991a3c80f202f260ba4042d8bea46c3a9b",
+    "fhd_clock.def": "c456a429b1f9d4529f65ad185334934d65f193792514268e59250ecfa02c3d68",
+    "requirements.md": "80ff4b70238920202c4d38a6493214e33524316741a1edef77b6ad8daf292a87",
+    "tests/verify_dat.py": "dd59bbe09d321a10ecd6ad35edbe6c231ae61279b7022d5077027c9556308725",
+    "tests/verify_pe.py": "4276bb27f3e54f670fcf9bef5085c928528540c1b27b0546f49eb316e3486fa3"
+  },
+  "tests": {
+    "pe_instruction_emulation": "pass on both EXEs",
+    "clock_display": "HH:MM, one separator, no seconds, minute and midnight rollover",
+    "layout": "six resolutions, horizontal center, 3 px top gap",
+    "main_dat": "byte-identical to 0.1.0",
+    "full_game_runtime": "unavailable"
+  }
+}
