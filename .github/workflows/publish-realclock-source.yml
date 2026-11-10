@@ -1,0 +1,33 @@
+name: Publish RealClock 0.1.1 editable source
+
+on:
+  push:
+    paths:
+      - '.github/workflows/publish-realclock-source.yml'
+      - 'tools/publish_source.py'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify original ZIP and export byte-identical source
+        run: python tools/publish_source.py
+      - name: Commit original source files
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- 1FHD_RealClock_0.1.1_TEST_Nexus-GitHub/SOURCE 1FHD_RealClock_0.1.1_TEST_Nexus-GitHub/docs 1FHD_RealClock_0.1.1_TEST_Nexus-GitHub/VERIFICATION.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Publish original RealClock 0.1.1 source files and checksums'
+            git push origin HEAD:main
+          fi
