@@ -1,0 +1,43 @@
+{
+  "mod": "FHD_RealClock",
+  "version": "1.3 D3D9 TEST",
+  "game_exe": {
+    "2025-10-13": "83300344af802bc51e64389c58f047e5afdf195c133048098be3881fae29ed98",
+    "2026-10-06": "e43a4b15503c705eebe2d8ce5778c2a2fb090db515a3fd86d319e5c5aa692ebf"
+  },
+  "files": {
+    "Mods/FHD_MODS/FHD_RealClock/CFG/Main.dat": "e2f8fb1e83eb7680bf28d8cecde69a62fe4099636ed5811a3fad82e8eb66ce44",
+    "Mods/FHD_MODS/FHD_RealClock/CFG/Rus/Lang.dat": "038812ea7f5c193ba258a29b3adfd20a240ad12222c7a49dd1dfda5f8933c030",
+    "Mods/FHD_MODS/FHD_RealClock/ModuleInfo.txt": "db860aeded6343853deda55bef008c6d233e4d3a3a530556612cf7d699412152",
+    "Mods/FHD_MODS/FHD_RealClock/Native/FHDRealClock.dll": "19c17cc107b1cfcb38c7be535776dcce2aba049215e9f95c6cd2f67bb5ca9851",
+    "README_RU.txt": "3ecb1cb42e98a127a783b559c708065733bac187b2caf654a8d68564dd7d98b4"
+  },
+  "sources": {
+    "BUILD.md": "f9c78f72795d3c3247e053189527c15159db9dc8572b275317ab52ad18d9c636",
+    "CHANGELOG.md": "0c3918757eee55487756de622d1be63fc5bd62e89444a85700cb1bb989a760fc",
+    "Lang.txt": "6d5dc6d20b8dcf811aceba7d04b526eb658d76427382345fe6d4120ffddf4152",
+    "Main.txt": "89333bc6d113ac4fd2cd8b6b9f19c1e399796b485537c5fca494d1f8165f3dd4",
+    "build.sh": "ac7960ecc97701715c46770a8019222eff0e3bd17093301b40cc859894d669cb",
+    "build_dat.py": "30ab83189a36d8782d7b98c13d78806350e982f8374b235862832bb1714f497c",
+    "clock_art.h": "8084a8d07256b2a25b1bb8b07545d451b6eb4e7510ed0d961a68d3f469025c32",
+    "clock_geometry.c": "867864f17b45fa9b5c5c7b8ead6e2a2278a3c62fd0d5eafbdc6c8f59fcd6e882",
+    "clock_geometry.h": "dd56573f444e96a6cd56fb5f5275c628b60c34acafef724c2da45d921725e3d6",
+    "clock_settings.c": "beb45f9cca545101031aa1d8e4ee4185dafee1881976bdc4acdd157c33850fc6",
+    "clock_settings.h": "674cdadef3852f0bb66a5b1af7f7af553674e010088309086e2b7f3c3d1dd20d",
+    "fhd_clock.c": "22a72d231c019a9830e47e5b24f03aa44c4df16d58125b02ecb0c4add732e53f",
+    "fhd_clock.def": "c456a429b1f9d4529f65ad185334934d65f193792514268e59250ecfa02c3d68",
+    "menu_font.h": "470e8b1e656f55947939a2fba2441de283c4323c9ccebdb99e68e227a8cb7aac",
+    "requirements.md": "2e59e4ea17deb6926cb4dfc91fac0e36a0012289f412613cb02af48d3ee5c66e",
+    "tests/verify_dat.py": "dc471d71ee9a57eee164b7f66328d3a0f9bcfa3229921d862ea9e62b0527fb03",
+    "tests/verify_pe.py": "4de48cb465a2293940e98bbbd1ef431d5f86c33a8a216c9edb4d4240fc986868"
+  },
+  "tests": {
+    "pe_instruction_emulation": "pass on both EXEs",
+    "clock_display": "HH:MM, weekday and date, no seconds; minute, day and midnight changes",
+    "layout": "six resolutions, horizontal center, 3 px top gap",
+    "settings": "two palettes, toggles, drag, configuration round trip and redraw pass",
+    "main_dat": "byte-identical to the 0.1.1 renderer bootstrap",
+    "lang_dat": "independent decode, legacy type without action code",
+    "full_game_runtime": "not tested"
+  }
+}

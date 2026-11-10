@@ -1,0 +1,11 @@
+ShipInfo ^{
+    AddInfo ^{
+        CustomInfos ^{
+            FHDRealClockCore ^{
+                Name=Бортовой хронометр реального времени
+                Description=Служебная запись из сохранений FHD RealClock v1.0 и v1.1
+                Icon=0
+            }
+        }
+    }
+}
